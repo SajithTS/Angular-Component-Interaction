@@ -1,0 +1,10 @@
+<p>
+  This is Parent!
+  <br>
+  <input type="text" name="msg" #msg>
+  <input type="button" (click)="callChild(msg.value)" value="Call Child">
+</p>
+<br><br>
+<p>
+  <app-child [childMessage]="parentMessage"></app-child>
+</p>

@@ -1,0 +1,9 @@
+<a style="padding: 10px;" [routerLink]="[ '/parent-to-child']">Parent to child</a>
+<a style="padding: 10px;" [routerLink]="[ '/child-to-parent']" (click)="showOrHide()">Child to parent</a>
+<a style="padding: 10px;" [routerLink]="[ '/using-service']">Shared Service Method</a>
+<div *ngIf="showChildOptios" style="margin-left: 5%;padding: 10px;">
+  <a style="padding: 10px;" [routerLink]="[ '/child-to-parent/view-child-method']">ViewChild Method</a>
+  <a style="padding: 10px;" [routerLink]="[ '/child-to-parent/output-decorator-method']">@Output Method</a>
+</div>
+
+<router-outlet></router-outlet>

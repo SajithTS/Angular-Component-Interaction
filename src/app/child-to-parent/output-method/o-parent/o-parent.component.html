@@ -1,0 +1,8 @@
+
+  This is parent<br>
+  <div *ngIf="message">
+    <b>Message from child:</b>{{message}}
+  </div>
+<p>
+  <app-o-child (messageEvent)="receiveChildCall($event)"></app-o-child>
+</p>

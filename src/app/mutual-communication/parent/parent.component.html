@@ -1,0 +1,8 @@
+<h2>This is parent</h2> {{message}}
+<p>
+  <input type="text" #msg>
+  <input type="button" value="Set value" (click)="set(msg.value)">
+</p>
+<p>
+  <app-child></app-child>
+</p>
