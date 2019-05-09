@@ -3,8 +3,7 @@ import { VChildComponent } from '../v-child/v-child.component';
 
 @Component({
   selector: 'app-v-parent',
-  templateUrl: './v-parent.component.html',
-  styleUrls: ['./v-parent.component.sass']
+  templateUrl: './v-parent.component.html'
 })
 export class VParentComponent implements AfterViewInit {
   
