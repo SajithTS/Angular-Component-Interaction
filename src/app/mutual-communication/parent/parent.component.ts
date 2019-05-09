@@ -3,8 +3,7 @@ import { CommunicationService } from 'src/app/communication.service';
 
 @Component({
   selector: 'app-parent',
-  templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.sass']
+  templateUrl: './parent.component.html'
 })
 export class ParentComponent implements OnInit {
   message:string;
