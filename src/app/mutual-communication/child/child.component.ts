@@ -10,11 +10,20 @@ export class ChildComponent implements OnInit {
   constructor(private ser:CommunicationService) { }
 
   ngOnInit() {
-    this.ser.currentMessage.subscribe(msg => this.message = msg);
+    this.ser.currentMessage.subscribe(msg => {
+      this.message = msg;
+      if(msg == 'call'){
+        this.openAlert();
+      }
+    });
   }
 
   set(msg){
     this.ser.changeMessage(msg);
+  }
+  
+  openAlert(){
+    alert('This is from CHILD component.This alert is popup due to change of shared variable in PARENT component.')
   }
 
 }
